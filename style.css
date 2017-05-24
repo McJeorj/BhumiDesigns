@@ -1,0 +1,5 @@
+/* We're going to want to build this to be mobile first */
+
+@media screen and (min-width: 992 px) {
+	/* Responsiveness for desktop */
+}
