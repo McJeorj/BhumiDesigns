@@ -1,0 +1,36 @@
+---
+layout: default
+permalink: contact
+---
+
+<h1> Contact </h1>
+
+<div class="row">
+	<div class="col-md-8">
+		<h2> Get in Touch </h2>
+
+		<!-- This is the contact form, and will be forwarded to your email -->
+		<form action="https://formspree.io/{{ site.email }}">
+			{% for field in site.contact_form %}
+				<div class="row">
+					<div class="col-md-3">
+						{{ field.text }}
+					</div>
+					<div class="col-md-9">
+						{% if field.isTextArea == true %}
+							<textarea name="{{ field.name }}"></textarea>
+						{% else %}
+							<input type="{{ field.type }}" name="{{ field.name }}" required="{{ field.required }}">
+						{% endif %}
+					</div>
+				</div>
+			{% endfor %}
+			<div class="row"><input type="submit" value="Submit"></div>
+		</form>
+	</div>
+
+	<div class="col-md-4">
+		<h2> Find Us </h2>
+		Bhumi Designs <br>
+	</div>
+</div>
