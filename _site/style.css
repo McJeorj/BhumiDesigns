@@ -1,0 +1,56 @@
+body {
+	margin: 0;
+}
+
+.navbar {
+	margin: 0;
+	border: 0;
+	border-radius: 0;
+	min-height: 32px !important;
+}
+
+.navbar-nav > li > a {
+	/*padding-top:10px !important; 
+	padding-bottom:10px !important;*/
+}
+
+.navbar-default .navbar-brand {
+	font-family: 'Pacifico', cursive;
+	color: #ec465d;
+}
+
+.navbar-default .navbar-nav li a {
+	font-family: 'Bitter', serif;
+	color: #F7D2C8;
+}
+
+.navbar-default .navbar-nav li a:hover {
+	font-family: 'Bitter', serif;
+	color: #ec465d;
+}
+
+.navbar-default {
+	background-color: #242e35;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer .copyright {
+	display: inline;
+}
+
+.footer ul li {
+	display: inline;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+img {
+	width: 33vh;
+}
