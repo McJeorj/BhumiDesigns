@@ -3,5 +3,6 @@ layout: portfolio
 permalink: portfolio
 ---
 
-<h1> Portfolio </h1>
-<h2> Some of my work </h2>
+# Portfolio
+
+### Some of my work

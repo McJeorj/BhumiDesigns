@@ -22,8 +22,9 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://www.bhumidesigns.com" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username: BhumiDesigns
 instagram_username: bhumigardendesigns
-email: anjuneil@hotmail.com
-phone: 123-456-7890
+email: anju@bhumidesigns.com
+phone_number: 425-753-0983
+address:
 
 # Links for the navbar
 navigation:

@@ -1,21 +1,18 @@
 <footer class="footer">
 	<div class="container-fluid">
-		<span class="copyright">
-			&copy; 2017 Bhumi Designs
-		</span>
-		<span class="">
+		<span class="social">
 			<ul class="contact">
+				{% if site.phone_number %}
+					<li><i class="fa fa-phone"></i> {{ site.phone_number}} </li>
+				{% endif %}
 				{% if site.facebook_username %}
-					<li><a href="https://www.facebook.com/{{ site.facebook_username }}" class="fa fa-facebook">Facebook</a></li>
+					<li><a href="https://www.facebook.com/{{ site.facebook_username }}" class="fa fa-facebook"></a></li>
 				{% endif %}
 				{% if site.instagram_username %}
-					<li><a href="https://www.instagram.com/{{ site.instagram_username }}" class="fa fa-instagram">Instagram</a></li>
+					<li><a href="https://www.instagram.com/{{ site.instagram_username }}" class="fa fa-instagram"></a></li>
 				{% endif %}
 				{% if site.email %}
-					<li><a href="mailto:{{ site.email }}" class="fa fa-envelope">Email</a> </li>
-				{% endif %}
-				{% if site.phone_number %}
-					<li><i class="fa fa-phone">{{ site.phone_number}}</i></li>
+					<li><a href="mailto:{{ site.email }}" class="fa fa-envelope"></a> </li>
 				{% endif %}
 			</ul>
 		</span>

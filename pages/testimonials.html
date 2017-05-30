@@ -4,3 +4,39 @@ permalink: testimonials
 ---
 
 <h1> Testimonials </h1>
+<!-- {% assign loopindex = 0 %}
+{% for test in site.static_files %}                       
+  	{% if test.path contains 'testimonials' %}
+    	{% assign loopindex = loopindex | plus: 1 %}
+    	{% assign rowfinder = loopindex | modulo: 3 %}
+    	{% if rowfinder == 1 %}
+      		<div class="row">
+	      		<div class="col-md-4">
+	      			<p> {{ test.content }} </p>
+	      			<p> - {{ test.customer }} </p>
+	      		</div>
+    	{% elsif rowfinder == 0 %}
+      			<div class="col-md-4">
+	      			<p> {{ test.content }} </p>
+	      			<p> - {{ test.customer }} </p>
+	      		</div>
+      		</div>
+    	{% else %}
+      		<div class="col-md-4">
+      			<p> {{ test.content }} </p>
+	      		<p> - {{ test.customer }} </p>
+      		</div>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% if rowfinder != 0 %}
+      </div>
+{% endif %} -->
+
+{% for test in site.static_files %} 
+	{% if test.path contains 'testimonials' %}
+		<p> {{ test.content }} </p>
+		<p> - {{ test.customer }} </p>
+	{% endif %}
+{% endfor %}
