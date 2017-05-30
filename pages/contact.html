@@ -10,7 +10,7 @@ permalink: contact
 		<h2> Get in Touch </h2>
 
 		<!-- This is the contact form, and will be forwarded to your email -->
-		<form action="https://formspree.io/{{ site.email }}">
+		<form action="https://formspree.io/{{ site.email }}" method="POST">
 			{% for field in site.contact_form %}
 				<div class="row">
 					<div class="col-md-3">
