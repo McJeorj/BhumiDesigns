@@ -5,6 +5,7 @@ $bg_color: #fff;
 $navbar_color: #fff;
 $navbar_li_color: #000;
 $navbar_li_color-hover: #ec465d;
+$copyright_color: #aaa;
 $brand_font: 'Pacifico', cursive;
 $header_font: 'Bitter', serif;
 $body_font: 'Open Sans', sans-serif;
@@ -45,6 +46,8 @@ h1, h2, h3 {
 		float: none;
 
 		li a {
+			padding-left: 25px;
+			padding-right: 25px;
 			font-family: $header_font;
 			color: $navbar_li_color;
 			font-size: 1.1em;
@@ -87,10 +90,6 @@ h1, h2, h3 {
 	width: 100%;
 	height: 60px;
 
-	.copyright {
-		display: inline;
-	}
-
 	ul {
 		li {
 			display: inline;
@@ -102,9 +101,19 @@ h1, h2, h3 {
 		li:first-child {
 			float: left;
 		}
-	}
-}
 
-.fa {
-	color: black;
+		.fa {
+			color: $navbar_li_color;
+		}
+		.fa:hover {
+			color: $navbar_li_color-hover;
+			text-decoration: none;
+		}
+	}
+
+	.copyright {
+		color: $copyright_color;
+		margin-left: 30px;
+		padding-bottom: 10px;
+	}
 }
