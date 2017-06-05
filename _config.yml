@@ -15,9 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Bhumi Designs
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Container gardens, seasonal color, small space gardens and garden coaching
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://www.bhumidesigns.com" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username: BhumiDesigns
@@ -25,41 +23,10 @@ instagram_username: bhumigardendesigns
 email: anju@bhumidesigns.com
 phone_number: 425-753-0983
 address:
-
-# Links for the navbar
-navigation:
-- text: Home
-  url: /
-- text: About
-  url: about
-- text: Portfolio
-  url: portfolio
-- text: Testimonials
-  url: testimonials
-- text: Blog
-  url: blog
-- text: Contact
-  url: contact
-
-# List of fields for the contact form
-contact_form:
-- text: Name
-  type: text
-  name: name
-  required: true
-- text: Email
-  type: email
-  name: email
-  required: true
-- text: Address
-  type: text
-  name: address
-  required: false
-- text: Message
-  type: textarea
-  name: message
-  required: true
-  isTextArea: true
+  street_name: 1234 Sesame Street,
+  city_state_zipcode: Redmond, WA 98052
+author:
+    twitter: rzhade
 
 # Build settings
 markdown: kramdown

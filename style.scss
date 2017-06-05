@@ -27,6 +27,17 @@ h1, h2, h3 {
 	text-align: center;
 }
 
+@media screen and (max-width: 991px) { 
+	h1, h2, h3 {
+		padding-top: 30px;
+	}
+
+	.col-md-10 {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
 .navbar {
 	margin: 0;
 	border: 0;

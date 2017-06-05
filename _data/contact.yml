@@ -1,0 +1,17 @@
+- text: Name
+  type: text
+  name: name
+  required: true
+- text: Email
+  type: email
+  name: email
+  required: true
+- text: Address
+  type: text
+  name: address
+  required: false
+- text: Message
+  type: textarea
+  name: message
+  required: true
+  isTextArea: true

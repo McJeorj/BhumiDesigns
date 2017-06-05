@@ -34,9 +34,9 @@ permalink: testimonials
       </div>
 {% endif %} -->
 
-{% for test in site.static_files %} 
-	{% if test.path contains 'testimonials' %}
-		<p> {{ test.content }} </p>
-		<p> - {{ test.customer }} </p>
+{% for post in posts %} 
+	{% if test.path contains 'Testimonials' %}
+		<p> {{ post.content }} </p>
+		<p> - {{ post.customer }} </p>
 	{% endif %}
 {% endfor %}
