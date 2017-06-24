@@ -4,39 +4,41 @@ permalink: testimonials
 ---
 
 <h1> Testimonials </h1>
+
+{% for testimonial in data.allTestimonials %}
+
+  {% capture testimonialmd %}{% include {{ testimonial }} %}{% endcapture %}
+  <section class="aside">
+    {{ testimonialmd | markdownify }}
+  </section>
+
+{% endfor %}
+
+
 <!-- {% assign loopindex = 0 %}
-{% for test in site.static_files %}                       
-  	{% if test.path contains 'testimonials' %}
+{% for testimonial in site.data.allTestimonials %}                     
+  	{% capture testimonialmd %}{% include {{ testimonial }} %}{% endcapture %}
     	{% assign loopindex = loopindex | plus: 1 %}
     	{% assign rowfinder = loopindex | modulo: 3 %}
     	{% if rowfinder == 1 %}
       		<div class="row">
 	      		<div class="col-md-4">
-	      			<p> {{ test.content }} </p>
-	      			<p> - {{ test.customer }} </p>
+	      			{{ testimonialmd | markdownify }}
 	      		</div>
     	{% elsif rowfinder == 0 %}
       			<div class="col-md-4">
-	      			<p> {{ test.content }} </p>
-	      			<p> - {{ test.customer }} </p>
+	      			{{ testimonialmd | markdownify }}
 	      		</div>
       		</div>
     	{% else %}
       		<div class="col-md-4">
-      			<p> {{ test.content }} </p>
-	      		<p> - {{ test.customer }} </p>
+      			{{ testimonialmd | markdownify }}
       		</div>
     {% endif %}
-  {% endif %}
 {% endfor %}
 
 {% if rowfinder != 0 %}
       </div>
 {% endif %} -->
 
-{% for post in posts %} 
-	{% if test.path contains 'Testimonials' %}
-		<p> {{ post.content }} </p>
-		<p> - {{ post.customer }} </p>
-	{% endif %}
-{% endfor %}
+<h3> Leave your testimonial here! </h3>

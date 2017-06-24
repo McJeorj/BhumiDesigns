@@ -7,6 +7,7 @@ $navbar_li_color: #000;
 $navbar_li_color-hover: #ec465d;
 $copyright_color: #aaa;
 $brand_font: 'Pacifico', cursive;
+// $brand_font: 'Playfair Display'
 $header_font: 'Bitter', serif;
 $body_font: 'Open Sans', sans-serif;
 
@@ -126,5 +127,22 @@ h1, h2, h3 {
 		color: $copyright_color;
 		margin-left: 30px;
 		padding-bottom: 10px;
+	}
+}
+
+.contact-form {
+	.submitField {
+		width: 100%;
+		padding-right: 20px;
+		padding-bottom: 15px;
+		border: 1px solid #D3D3D3;
+	}
+
+	#submit {
+		border: 1px solid gray;
+		background: #D3D3D3;
+		box-shadow:none;
+		border-radius: 0px;
+		margin-left: 20px;
 	}
 }

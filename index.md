@@ -4,6 +4,6 @@ layout: default
 
 # Home
 
-Site under construction
+Welcome to Bhumi Designs. 
 
-In the mean time, visit my [instagram](https://www.instagram.com/{{ site.instagram_username }}) and [facebook](https://www.facebook.com/{{ site.facebook_username }})
+We service the Greater Seattle area and the 

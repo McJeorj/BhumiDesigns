@@ -7,24 +7,21 @@ layout: default
 <div class="row">
 	<div class="col-md-8">
 		<h2> Get in Touch </h2>
-
+		
+		{{ content }}
 		<!-- This is the contact form, and will be forwarded to your email -->
-		<form action="https://formspree.io/{{ site.email }}" method="POST">
+		<form action="https://formspree.io/{{ site.email }}" method="POST" class="contact-form">
 			{% for field in site.data.contact %}
-				<div class="row">
-					<div class="col-md-3">
-						{{ field.text }}
-					</div>
-					<div class="col-md-9">
-						{% if field.isTextArea == true %}
-							<textarea name="{{ field.name }}"></textarea>
-						{% else %}
-							<input type="{{ field.type }}" name="{{ field.name }}" required="{{ field.required }}">
-						{% endif %}
-					</div>
-				</div>
+				<p> <b> {{ field.text }} </b> </p>
+				{% if field.isTextArea == true %}
+					<textarea name="{{ field.name }}" class="submitField" rows="5"></textarea>
+				{% else %}
+					<input type="{{ field.type }}" name="{{ field.name }}" required="{{ field.required }}" class="submitField">
+				{% endif %}
+				<br/>
 			{% endfor %}
-			<div class="row"><input type="submit" value="Submit"></div>
+			<br/>
+			<div class="row"><input type="submit" value="Submit" id="submit"></div>
 		</form>
 	</div>
 

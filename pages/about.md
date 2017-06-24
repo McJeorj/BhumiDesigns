@@ -3,9 +3,6 @@ layout: default
 permalink: about
 ---
 
-## About
-Site under construction
+# About
 
-In the mean time, visit my [instagram](https://www.instagram.com/{{ site.instagram_username }}) and [facebook](https://www.facebook.com/{{ site.facebook_username }})
-
-
+__Bhumi Garden Designs, LLC__ is a landscaping and design company based out of Redmond. We specialize in container design, and 

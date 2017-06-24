@@ -1,12 +1,14 @@
 - text: Home
   url: /
 - text: About
-  url: about
+  url: /about
 - text: Portfolio
-  url: portfolio
+  url: /portfolio
+- text: Services
+  url: /services
 - text: Testimonials
-  url: testimonials
+  url: /testimonials
 - text: Blog
-  url: blog
+  url: /blog
 - text: Contact
-  url: contact
+  url: /contact
