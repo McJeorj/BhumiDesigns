@@ -1,13 +1,50 @@
 ---
 layout: default
 permalink: blog
+image: garden2.jpg
 ---
 
 <h1> Blog </h1>
-<ul>
-	{% for post in site.posts %}
-		<li>
-    		<a href="{{ post.url }}">{{ post.title }}</a>
-    	</li>
-  	{% endfor %}
-</ul>
+
+{% assign loopindex = 0 %}
+{% for post in site.posts %}                       
+	{% assign loopindex = loopindex | plus: 1 %}
+	{% assign rowfinder = loopindex | modulo: 3 %}
+	{% if rowfinder == 1 %}
+  		<div class="row">
+      		<div class="col-md-4 blogMain">
+      			<div class="blogImageWrapper">
+	                <img src="{{ site.baseurl}} /assets/blogImages/{{ post.image }}"/>
+	            </div>
+	    		<h1>
+	    			<a href="{{ post.url }}">{{ post.title }}</a>
+	    		</h1>
+	    		<p> {{ post.excerpt }} </p>
+            </div>
+	{% elsif rowfinder == 0 %}
+      		<div class="col-md-4 blogMain">
+      			<div class="blogImageWrapper">
+	                <img src="{{ site.baseurl}} /assets/blogImages/{{ post.image }}"/>
+	    		</div>
+	    		<h1>
+	    			<a href="{{ post.url }}">{{ post.title }}</a>
+	    		</h1>
+	    		<p> {{ post.excerpt }} </p>
+            </div>
+  		</div>
+	{% else %}
+        <div class="col-md-3 blogMain">
+	        <div class="blogImageWrapper">
+	            <img src="{{ site.baseurl}} /assets/blogImages/{{ post.image }}"/>
+	    	</div>
+	    	<h1>
+	    		<a href="{{ post.url }}">{{ post.title }}</a>
+	    	</h1>
+	    	<p> {{ post.excerpt }} </p>
+        </div>
+  {% endif %}
+{% endfor %}
+
+{% if rowfinder != 0 %}
+      </div>
+{% endif %}

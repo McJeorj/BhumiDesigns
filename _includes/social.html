@@ -1,12 +1,12 @@
 <ul class="contact">
 	{% if site.facebook_username %}
-		<li><a href="https://www.facebook.com/{{ site.facebook_username }}" class="fa fa-facebook">Facebook</a></li>
+		<li><a href="https://www.facebook.com/{{ site.facebook_username }}" class="fa fa-facebook social-media">Facebook</a></li>
 	{% endif %}
 	{% if site.instagram_username %}
-		<li><a href="https://www.instagram.com/{{ site.instagram_username }}" class="fa fa-instagram">Instagram</a></li>
+		<li><a href="https://www.instagram.com/{{ site.instagram_username }}" class="fa fa-instagram social-media">Instagram</a></li>
 	{% endif %}
 	{% if site.email %}
-		<li><a href="mailto:{{ site.email }}" class="fa fa-envelope">Email</a> </li>
+		<li><a href="mailto:{{ site.email }}" class="fa fa-envelope social-media">Email</a> </li>
 	{% endif %}
 	{% if site.phone_number %}
 		<li><i class="fa fa-phone">{{ site.phone_number}}</i></li>

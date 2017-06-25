@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 permalink: portfolio
+image: garden2.jpg
 ---
 
 # Portfolio

@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: about
+image: garden1.jpg
 ---
 
 # About
