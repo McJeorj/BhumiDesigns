@@ -3,10 +3,10 @@
 	{% include header.html %}
 </head>
 <body>
+	{% include topBar.html %}
 	{% include navbar.html %}
 	<div class="backgroundImage">
 		<img src="{{ site.baseurl }}/assets/pageBackgrounds/{{ page.image }} "/>
-		<h1> {{ site.title }} </h1>
 	</div>
 	<div class="container-fluid">
 		{{ content }}

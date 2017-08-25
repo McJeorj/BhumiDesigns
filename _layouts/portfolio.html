@@ -7,19 +7,19 @@ layout: default
 {% for image in site.static_files %}                       
   	{% if image.path contains 'portfolio' %}
     	{% assign loopindex = loopindex | plus: 1 %}
-    	{% assign rowfinder = loopindex | modulo: 3 %}
+    	{% assign rowfinder = loopindex | modulo: 4 %}
     	{% if rowfinder == 1 %}
       		<div class="row">
-          		<div class="col-md-4">
+          		<div class="col-md-3">
                     <img src="{{ image.path }}" alt="image" class="portfolio-pic"/>
                 </div>
     	{% elsif rowfinder == 0 %}
-          		<div class="col-md-4">
+          		<div class="col-md-3">
                     <img src="{{ image.path }}"" alt="image" class="portfolio-pic"/>
                 </div>
       		</div>
     	{% else %}
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <img src="{{ image.path }}" alt="image" class="portfolio-pic"/>
             </div>
     {% endif %}

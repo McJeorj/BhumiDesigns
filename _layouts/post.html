@@ -1,0 +1,18 @@
+<html>
+<head>
+	{% include header.html %}
+</head>
+<body>
+	{% include topBar.html %}
+	{% include navbar.html %}
+	<div class="backgroundImage">
+		<img src="{{ site.baseurl }}/assets/blogImages/{{ page.image }} "/>
+	</div>
+	<div class="container-fluid">
+		<br/>
+		{{ content }}
+		<br/>
+	</div>
+	{% include footer.html %}
+</body>
+</html>

@@ -2,14 +2,16 @@
 ---
 
 $bg_color: #fff;
-$navbar_color: #fff;
 $box_color: #fff;
+$footer-color: #fff;
+$navbar_color: #fff;
 $navbar_li_color: #000;
 $navbar_li_color-hover: #ec465d;
 $copyright_color: #2A3C24;
+$hyperlink-color: #000;
 $text_color: #2A3C24;
 $brand_font: 'Pacifico', cursive;
-$header_font: 'Bitter', serif;
+$header_font: 'Ubuntu', sans-serif;
 $body_font: 'Open Sans', sans-serif;
 
 
@@ -19,13 +21,21 @@ html {
 }
 
 body {
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 	background-color: $bg_color;
 	font-family: $body_font;
 	color: $text_color;
 
+	a {
+		color: $hyperlink-color;
+
+		&:hover {
+			color: $navbar_li_color-hover;
+		}
+	}
+
 	p {
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 }
 
@@ -39,14 +49,6 @@ body {
 		height: auto;
 		display: block;
 		margin: auto;
-	}
-
-	h1 { 
-	   position: absolute; 
-	   top: 200px; 
-	   width: 100%; 
-	   color: white;
-	   font-size: 3em;
 	}
 }
 
@@ -89,6 +91,8 @@ body {
 	bottom: 0;
 	width: 100%;
 	height: 60px;
+	border-top: 1px solid gray; 
+	background-color: $footer-color;
 
 	.copyright {
 		color: $copyright_color;
@@ -136,16 +140,120 @@ h1, h2, h3 {
 	}
 }
 
+.navbar {
+	margin: 0;
+	border: 0;
+	border-radius: 0;
+	min-height: 32px !important;
+}
+
+.navbar-default {
+	background-color: $navbar_color;
+
+	.navbar-collapse {
+		text-align: center;
+	}
+
+	.navbar-nav {
+		display: inline-block;
+		float: none;
+
+		li a {
+			padding-left: 25px;
+			padding-right: 25px;
+			font-family: $header_font;
+			color: $navbar_li_color;
+			font-size: 1.1em;
+
+			&:hover {
+				color: $navbar_li_color-hover;
+			}
+		}
+	}
+}
+
+.parallax {
+	height: 300px;
+	background-attachment: fixed;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("{{ site.baseurl }}/assets/parallax1.jpg")
+}
+
+.portfolio-pic {
+	max-width: 100%;
+	height: 300px;
+	padding-bottom: 10px;
+	margin: auto;
+	display: block;
+}
+
+.profile-pic {
+	display: inline;
+	height: 200px;
+	float: right;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.top-bar {
+	list-style-type: none;
+	background-color: #37432C;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+	ul {
+		li {
+			display: inline;
+			float: right;
+			padding-right: 10px;
+		}
+		li:first-child {
+			float: left;
+		}
+
+		.fa {
+			color: white;
+		}
+		a:hover {
+			color: $navbar_li_color-hover;
+			text-decoration: none;
+		}
+	}
+}
+
+@media screen and (min-width: 991px) { 
+	.top-bar {
+		ul {
+			li {
+				display: inline;
+				float: right;
+				padding-right: 30px;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 991px) { 
-	.fa.social-media {
-		margin-right: -10px;
-		margin-left: -10px;
+	.top-bar {
+		ul {
+			li {
+				display: inline;
+				float: right;
+				padding-right: 10px;
+			}
+			li:first-child {
+				margin-left: -20px;
+			}
+		}
 	}
 }
 
 @media (max-width: 1200px) {
 	h1, h2, h3 {
-		padding-top: 30px;
+		padding-top: 10px;
 	}
 
     .navbar-header {
@@ -182,45 +290,13 @@ h1, h2, h3 {
     .collapse.in{
         display:block !important;
     }
-}
-
-.navbar {
-	margin: 0;
-	border: 0;
-	border-radius: 0;
-	min-height: 32px !important;
-}
-
-.navbar-default {
-	background-color: $navbar_color;
-
-	.navbar-collapse {
-		text-align: center;
-	}
-
-	.navbar-nav {
-		display: inline-block;
-		float: none;
-
-		li a {
-			padding-left: 25px;
-			padding-right: 25px;
-			font-family: $header_font;
-			color: $navbar_li_color;
-			font-size: 1.1em;
-		}
-
-		li a:hover {
-			color: $navbar_li_color-hover;
+    .top-bar {
+		ul {
+			li {
+				display: inline;
+				float: right;
+				padding-right: -10px;
+			}
 		}
 	}
 }
-
-.portfolio-pic {
-	max-width: 100%;
-	height: 300px;
-	padding-bottom: 10px;
-	margin: auto;
-	display: block;
-}
-
