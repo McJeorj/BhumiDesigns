@@ -7,7 +7,7 @@ image: garden2.jpg
 
 <img src="{{ site.baseurl }}/assets/headshot.jpg" alt="Anju headshot" class="profile-pic"/>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio urna, interdum nec neque non, consequat dapibus metus. Vestibulum vitae quam metus. Mauris consectetur tortor sed risus euismod, a pharetra nunc efficitur. Aliquam aliquam mattis nisi, eget sodales purus pharetra vitae. Nam blandit felis nulla, ut pulvinar enim placerat id. Morbi maximus, nunc sit amet dapibus pretium, justo ante rhoncus arcu, et dignissim eros sapien id dui. Nunc orci lacus, condimentum non finibus quis, fringilla vitae nulla.
+This is Bhumi Designs
 
 Morbi eu volutpat risus. Sed in purus nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque volutpat massa ut nibh placerat condimentum. Proin pharetra ex in erat tincidunt suscipit. Nulla orci diam, aliquet sit amet accumsan id, feugiat sit amet eros. Quisque orci sem, consequat vel lacus id, iaculis gravida ex. Pellentesque euismod porttitor sem at ultricies. Sed iaculis ex at mi fringilla rhoncus eu vitae diam. Fusce lacus urna, commodo quis ipsum sed, convallis laoreet orci.
 
