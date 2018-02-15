@@ -6,18 +6,11 @@ image: garden1.jpg
 
 # About
 
-I am a small space garden designer and specialize in container designs, bold container designs, lush and quick impact small space garden designs, and garden coaching with more than 5 years of experience as a Certified Professional Horticulturist (CPH).
+Anju Neilju, a 2013 graduate of the Lake Washington Institute of Technology’s Environmental Horticulture program, a Certified Professional Horticulturist and a member of Washington State Nursery & Landscape Association is the owner of Bhumi Garden Designs.
 
-**Containers:** For the high impact areas of a garden, nothing can beat the role of containers filled with seasonal color and evergreens for all four seasons!
+Anju grew up on her father’s spice farm on the outskirts of Kerala, which is in the mountainous region of southern India. Along with cardamom, black pepper, coffee, cinnamon & cloves, were an abundance of bananas, jack fruit, guava, papaya & mangoes to be harvested from the rich soil. Taking this bucolic life on the farm for granted, it took her leaving it, to journey far away to America to bring her back to her origins with a broad artistic bend. 
 
-**Small space garden designs:** I love designing small gardens while walking with the client. Honestly, I like to get things done fast, rather than going back and forth with a complicated paper design, which in most cases ends up hidden in a shelf!
-
-**Garden coaching:** You can ask me garden questions & concerns, guidance on pruning, mulching, diseases, composting, and even watering! Ever wonder why a plant is still wilting after a continuous week of watering? Or, why your kales are packed with aphids? I’ll guide you every step of the way! 
-
-Over the last five years, I have created beautiful container designs and quick impact small garden spaces, which bring so much joy to so many clients! The most fun part is building long lasting relationships!
-
-
-When I am not working in gardens, I spend time with my husband and two college going boys. My other passion is salvage fashion, decoration, and bargain shopping. Love to mix and match old and new styles and bring out the beauty in each! One thing I tell my boys and strive to live by: “Create your own unique style!"
+Coming to America she heard the word & concept of “organic” for the first time. It intrigued her & made her want to feed herself and her family the cleanest & most nutritious diet possible. She would travel to organic U- pick farms to buy produce & happened to notice that there were abandoned fields filled with copious amounts of pig weed, a type of amaranth. When she inquired about it, the farmer was more than happy to have her gather, as much as she wanted, and take away with her. She went back again and again for more. This is what brought her back to the world of sustainable farming, which eventually lead her to study of horticulture.
 
 <br/>
 
