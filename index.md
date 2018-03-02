@@ -5,7 +5,7 @@ image: garden1.jpg
 
 # Welcome
 
-<img src="{{ site.baseurl }}/assets/testshot.jpg" alt="Anju headshot" class="profile-pic"/>
+<img src="{{ site.baseurl }}/assets/headshot.jpg" alt="Anju headshot" class="profile-pic"/>
 
 I personally think, when you start your day going off to work or arrive home from wherever your day takes you, after a busy and hectic or even a fun filled or marvelous day, you want to be welcomed back to a place that is attractive; that nourishes your soul; that inspires you. As a landscaper, horticulturalist, and artist my passion is creating an outdoor environment that my clients can be proud of. 
 <br><br/>
